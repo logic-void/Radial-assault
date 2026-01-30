@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Radial assault</title>
+  <style>
+    body{
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    #mycanvas{
+      touch-action: none;
+    }
+    .container{
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      width: 70%;
+    }
+    .scoretext{
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .pointstext{
+      text-align: center;
+      font-family: italic;
+      margin-bottom: 10px;
+    }
+    .btn{
+      border: none;
+      border-radius: 20px;
+      background: #3bf5ea;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="scoretext">0</div>
+    <div class="pointstext">points</div>
+    <button class="btn">Start Game</button>
+  </div>
+  <canvas id="mycanvas"></canvas>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
